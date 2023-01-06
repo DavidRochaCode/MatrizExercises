@@ -1,0 +1,12 @@
+package exemplo;
+
+public class Exemplo {
+
+	public static void main(String[] args) {
+		
+		int[][] notas = new int[6][10];
+		System.out.println(notas[6].length);
+
+	}
+
+}

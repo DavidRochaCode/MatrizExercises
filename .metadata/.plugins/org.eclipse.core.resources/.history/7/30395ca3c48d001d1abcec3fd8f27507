@@ -1,0 +1,14 @@
+package exemplo;
+
+public class Exemplo {
+
+	public static void main(String[] args) {
+		
+		int linhas = 3;
+		int colunas = 5;
+		int[][] notas = new int[linhas][colunas];
+		System.out.println(notas.length);
+
+	}
+
+}
