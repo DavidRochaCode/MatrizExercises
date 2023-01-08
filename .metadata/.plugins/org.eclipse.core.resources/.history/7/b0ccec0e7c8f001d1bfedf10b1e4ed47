@@ -32,7 +32,7 @@ public class Ex03 {
 		for(int k = 0; k < matrizM[2].length; k++) {
 			if(matrizM[2][k]>maiorNumeroLinha) {
 				maiorNumeroLinha = matrizM[2][k];
-			}else if(matrizM[2][k]<menorNumeroLinha) {
+			}else if(matrizM[2][k]<maiorNumeroLinha) {
 				menorNumeroLinha = matrizM[2][k];
 			}
 		}
