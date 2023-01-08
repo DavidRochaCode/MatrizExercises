@@ -1,0 +1,48 @@
+package ex04;
+
+import java.util.Scanner;
+
+public class Ex04 {
+
+	public static void main(String[] args) {
+
+		/*
+		 * Capture do teclado valores para preenchimento de uma matrz M 3x3. Após a
+		 * captura imprima a matriz criada e encontre a quantidade de números pares e
+		 * ímpares.
+		 */
+
+		Scanner scan = new Scanner(System.in);
+
+		int[][] numeros = new int[3][3];
+
+		// Adicionando os valores na matrz
+		for (int i = 0; i < numeros.length; i++) {
+			for (int k = 0; k < numeros[i].length; k++) {
+				System.out.println("Entre com um valor na linha " + (i + 1) + " e coluna " + (k + 1));
+				numeros[i][k] = scan.nextInt();
+			}
+		}
+
+		int numerosPares = 0;
+		int numerosImpares = 0;
+
+		// Buscando os números impares e pares
+		for (int i = 0; i < numeros.length; i++) {
+			for (int k = 0; k < numeros[i].length; k++) {
+				if (numeros[i][k] % 2 == 0) {
+					numerosPares++;
+				} else {
+					numerosImpares++;
+				}
+			}
+		}
+
+		System.out.println("A quantidade de números pares:");
+		System.out.print(numerosPares);
+		System.out.println();
+		System.out.println("A quantidade de números impares:");
+		System.out.print(numerosImpares);
+	}
+
+}
