@@ -1,0 +1,41 @@
+package ex02;
+import java.util.Scanner;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		/*Gere e imprima uma matriz M 4x4 com valores do teclado entre 0-9.
+		 * Após isso, determine o maior número da matriz e sua posição
+		 * (linhha,coluna)*/
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int[][] matrizM = new int[4][4];
+		
+		
+		for(int i = 0 ; i < matrizM.length; i++) {
+			for(int k = 0; k < matrizM[i].length; k++) {
+				System.out.println("Insira um valor na linha "+i+ " e coluna " + k);
+				matrizM[i][k] = scan.nextInt();
+			}
+		}
+		
+		int maior = matrizM[0][0];
+		
+		for(int i = 0; i < matrizM.length; i++) {
+			for(int k = 0; k < matrizM[i].length; k++) {
+				if(matrizM[i][k]>maior) {
+					maior = matrizM[i][k];
+				}
+			}
+		}
+		
+		System.out.println("O amior número é: " + maior);
+
+		
+		
+
+	}
+
+}
+
