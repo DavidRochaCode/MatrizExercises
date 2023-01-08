@@ -1,0 +1,41 @@
+package ex01;
+import java.util.Scanner;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		/* Escreva um programa para guardar dados de uma pesquisa feita com uma amostra
+		 * de pessoas da avenida mais movimentada da cidade onde você mora.
+		 * A pesquisa consiste em perguntar ao cidadão a quantidade de filhos e o
+		 * nome de cada filho. Guarde essas informações em uma matriz de forma que 
+		 * cada pessoa da entrevista ocupe somente o espaço necessário na memória para guardar
+		 * os nomes dos filhos.
+		 * Imprima a quantidade de pessoas entrevistadas, a quantidade de filhos de 
+		 * cada entrevitado e os respectivos nomes dos filhos.*/
+		
+		Scanner scan = new Scanner(System.in);
+		Scanner perguntarRepetir = new Scanner(System.in);
+		int quantidadeFilho = 0;
+		int perguntar;
+		String filhos[][] = new String[1][];
+		 
+		do {
+			System.out.println("Adicione a quantidade de filhos que você tem: ");
+			quantidadeFilho = scan.nextInt();
+			
+			for(int i = 0; i<quantidadeFilho; i++) {
+				for(int j = 0; j<quantidadeFilho; j++) {
+					for(int k = 0; k<quantidadeFilho; k++) {
+						
+					}
+				}
+				
+			}
+			System.out.println("Repetir operação?");
+			perguntar = perguntarRepetir.nextInt();
+		}while(perguntar ==1);
+			
+
+	}
+
+}
